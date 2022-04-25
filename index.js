@@ -1,4 +1,4 @@
-// import files
+// Required files
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const express = require("express");
 const cors = require("cors");
@@ -27,6 +27,7 @@ function verifyJWT(req, res, next) {
     }
   });
 }
+// root route for testing API
 app.get("/", (req, res) => {
   res.send("Running Genius service server");
 });
