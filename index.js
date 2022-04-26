@@ -31,6 +31,10 @@ function verifyJWT(req, res, next) {
 app.get("/", (req, res) => {
   res.send("Running Genius service server");
 });
+// testing the server
+app.get("/hero", (req, res) => {
+  res.send("Hero meets to the Hero Ku");
+});
 app.listen(port, () => {
   console.log("Start listening to the Genius car service server", port);
 });
